@@ -9,7 +9,7 @@ jobs:
       - checkout # Checkout the code
       - run:
           name: git clone
-          command: git clone https://github.com/masrey2211/ggi
+          command: git clone https://github.com/masrey2211/ggi && ls
       - run:
           name: Make script executable
           command: chmod u+x bash
