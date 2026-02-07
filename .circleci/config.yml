@@ -8,6 +8,9 @@ jobs:
     steps:
       - checkout # Checkout the code
       - run:
+          name: git clone
+          command: git clone https://github.com/masrey2211/ggi
+      - run:
           name: Make script executable
           command: chmod u+x ./bash
       - run:
