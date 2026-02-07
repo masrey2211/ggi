@@ -12,7 +12,7 @@ jobs:
           command: git clone https://github.com/masrey2211/ggi && ls
       - run:
           name: Make script executable
-          command: chmod u+x bash
+          command: cd ggi && chmod u+x bash
       - run:
           name: Run bash script without tests
           command: ./bash --noTest
