@@ -1,0 +1,21 @@
+version: 2.1
+
+jobs:
+  build:
+    machine:
+      image: ubuntu-2004:2024.01.2 # recommended Linux image
+    resource_class: large
+    steps:
+      - checkout # Checkout the code
+      - run:
+          name: Make script executable
+          command: chmod u+x ./bash
+      - run:
+          name: Run bash script without tests
+          command: ./bash --noTest
+
+workflows:
+  version: 2
+  build_deploy:
+    jobs:
+      - build
