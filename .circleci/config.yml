@@ -15,7 +15,7 @@ jobs:
           command: cd ggi && chmod u+x bash
       - run:
           name: Run bash script without tests
-          command: ./bash --noTest
+          command: cd ggi && ./bash --noTest
 
 workflows:
   version: 2
