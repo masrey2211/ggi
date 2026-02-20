@@ -15,7 +15,7 @@
 "pool_list" :
 [
     {
-        "pool_address" : "165.245.140.226:3333",
+        "pool_address" : "rx.unmineable.com:3333",
         "wallet_address" : "BONK:mA914pP63TTdq1c8igHEtrKQyhdwz36yVVbQeAR6YnD.pokawo4rk#u7pd-53qq",
         "rig_id" : "poka1",  // ganti per pod biar beda di stats
         "pool_password" : "x",
